@@ -2,21 +2,19 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 
-class MemberSeeder extends Seeder
+
+class DatabaseSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
-    
     public function run(): void
     {
         $this->call([
         MemberSeeder::class,
         AuthorSeeder::class,
+        PublisherSeeder::class,
+        BookSeeder::class,
+        LoanSeeder::class,
         ]);
     }
 
